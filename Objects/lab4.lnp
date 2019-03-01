@@ -1,0 +1,11 @@
+--cpu Cortex-M3
+".\objects\main.o"
+".\objects\setupclock.o"
+".\objects\setupinter.o"
+".\objects\gpio_stm32f10x.o"
+".\objects\startup_stm32f10x_md_vl.o"
+".\objects\system_stm32f10x.o"
+--strict --scatter ".\Objects\lab4.sct"
+--summary_stderr --info summarysizes --map --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list ".\Listings\lab4.map" -o .\Objects\lab4.axf
